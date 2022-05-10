@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>MetaProfit Dashboard</title>
+</head>
+ 
+<body>
+    <header class="header">
+        <div class="header__nav">
+            <div class="header__board-name"></div>
+            <div class="header__board-nav"></div>
+        </div>
+        <div class="header__user">
+            <div class="header__login"></div>
+        </div>
+    </header>
+    <section class="sidebar">
+        <div class="logo-details">
+            <div class="logo-img"></div>
+            <span class="logo-details__name">MetaProfit</span>
+        </div>
+        <div class="sidebar__nav-list">
+            <ul class="sidebar__items">
+                <li class="sidebar__item icon-mpanel">
+                    <a href="#" class="sidebar__item-link">
+                        <span class="sidebar__item-name ">MPanel</span>
+                    </a>
+                </li>
+                <li class="sidebar__item icon-search">
+                    <a href="#" class="sidebar__item-link">
+                        <span class="sidebar__item-name ">Search</span>
+                    </a>
+                </li>
+                <li class="sidebar__item icon-favorite">
+                    <a href="#" class="sidebar__item-link">
+                        <span class="sidebar__item-name ">Favorites</span>
+                    </a>
+                </li>
+                <li class="sidebar__item icon-analitycs">
+                    <a href="#" class="sidebar__item-link">
+                        <span class="sidebar__item-name ">Analitycs</span>
+                    </a>
+                </li>
+                <li class="sidebar__item icon-accounts">
+                    <a href="#" class="sidebar__item-link">
+                        <span class="sidebar__item-name ">Accounts</span>
+                    </a>
+                </li>
+                <li class="sidebar__item icon-notification">
+                    <a href="#" class="sidebar__item-link">
+                        <span class="sidebar__item-name ">Notifications</span>
+                    </a>
+                </li>
+                <li class="sidebar__item icon-sticker">
+                    <a href="#" class="sidebar__item-link">
+                        <span class="sidebar__item-name">Sticker Generator</span>
+                    </a>
+                </li>
+                <li class="sidebar__item icon-settings">
+                    <a href="#" class="sidebar__item-link">
+                        <span class="sidebar__item-name">Settings</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="sidebar__user-nav">
+            <div class="sidebar__logout">
+                <a href="#" class="sidebar__logout-link">
+                    <span class="sidebar__logout-text">Log Out</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <main class="main-dashboard">
+        <section class="main-dashboard__blocks">
+            <!-- Задать семантичное название для каждого блока -->
+            <div class="main-dashboard__first"></div>
+            <div class="main-dashboard__second"></div>
+            <div class="main-dashboard__third"></div>
+        </section>
+        <section class="main-dashboard__relevant">
+            <table class="table-relevant" id="relevantProductsTable">
+                <caption class="visually-hidden">Список релевантных товаров</caption>
+                <thead class="table-relevant__header">
+                    <tr>
+                        <td>Photo</td>
+                        <td>Publication</td>
+                        <td>Name</td>
+                        <td>Private Persone</td>
+                        <td>Price</td>
+                        <td>Market Price +/-</td>
+                        <td>Location</td>
+                    </tr>
+                </thead>
+                <tbody class="table-relevant__body">
+                    <!-- Динамически генерируемая таблица с подходящими вариантами телефонов -->
+                    <tr>
+                        <td><img src="@assets/temp/1.jpg" alt="" width="84" height="98"></td>
+                        <td class="publication">
+                            <div class="publication__wrap">
+                                <span class="time">7 мая</span>
+                                <span class="date">23:33</span>
+                            </div>
+                        </td>
+                        <td class="name">
+                            <div class="name__wrap">
+                                <span class="name__link"><a href="">iPhone 8Plus</a></span>
+                                <span class="name__condition">Отличный</span>
+                            </div>
+                        </td>
+                        <td class="isprivate">
+                            <div class="isprivate__wrap">
+                                <span><img src="@assets/mutual/icon-check.svg" alt="" ></span>
+                            </div>
+                        </td>
+                        <td class="price">
+                            18500
+                        </td>
+                        <td class="market-price">
+                            <span class="market-price__green"></span>
+                            <span class="market-price__red">+500</span>
+                        </td>
+                        <td class="location">
+                            <span class="location__green"></span>
+                            <span class="location__red">~20 km</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="@assets/temp/1.jpg" alt="" width="84" height="98"></td>
+                        <td class="publication">
+                            <div class="publication__wrap">
+                                <span class="time">7 мая</span>
+                                <span class="date">23:33</span>
+                            </div>
+                        </td>
+                        <td class="name">
+                            <div class="name__wrap">
+                                <span class="name__link"><a href="">iPhone 8Plus</a></span>
+                                <span class="name__condition">Отличный</span>
+                            </div>
+                        </td>
+                        <td class="isprivate">
+                            <div class="isprivate__wrap">
+                                <span><img src="@assets/mutual/icon-check.svg" alt="" ></span>
+                            </div>
+                        </td>
+                        <td class="price">
+                            18500
+                        </td>
+                        <td class="market-price">
+                            <span class="market-price__green"></span>
+                            <span class="market-price__red">+500</span>
+                        </td>
+                        <td class="location">
+                            <span class="location__green"></span>
+                            <span class="location__red">~20 km</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="@assets/temp/1.jpg" alt="" width="84" height="98"></td>
+                        <td class="publication">
+                            <div class="publication__wrap">
+                                <span class="time">7 мая</span>
+                                <span class="date">23:33</span>
+                            </div>
+                        </td>
+                        <td class="name">
+                            <div class="name__wrap">
+                                <span class="name__link"><a href="">iPhone 8Plus</a></span>
+                                <span class="name__condition">Отличный</span>
+                            </div>
+                        </td>
+                        <td class="isprivate">
+                            <div class="isprivate__wrap">
+                                <span><img src="@assets/mutual/icon-check.svg" alt="" ></span>
+                            </div>
+                        </td>
+                        <td class="price">
+                            18500
+                        </td>
+                        <td class="market-price">
+                            <span class="market-price__green"></span>
+                            <span class="market-price__red">+500</span>
+                        </td>
+                        <td class="location">
+                            <span class="location__green"></span>
+                            <span class="location__red">~20 km</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="@assets/temp/1.jpg" alt="" width="84" height="98"></td>
+                        <td class="publication">
+                            <div class="publication__wrap">
+                                <span class="time">7 мая</span>
+                                <span class="date">23:33</span>
+                            </div>
+                        </td>
+                        <td class="name">
+                            <div class="name__wrap">
+                                <span class="name__link"><a href="">iPhone 8Plus</a></span>
+                                <span class="name__condition">Отличный</span>
+                            </div>
+                        </td>
+                        <td class="isprivate">
+                            <div class="isprivate__wrap">
+                                <span><img src="@assets/mutual/icon-check.svg" alt="" ></span>
+                            </div>
+                        </td>
+                        <td class="price">
+                            18500
+                        </td>
+                        <td class="market-price">
+                            <span class="market-price__green"></span>
+                            <span class="market-price__red">+500</span>
+                        </td>
+                        <td class="location">
+                            <span class="location__green"></span>
+                            <span class="location__red">~20 km</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="@assets/temp/1.jpg" alt="" width="84" height="98"></td>
+                        <td class="publication">
+                            <div class="publication__wrap">
+                                <span class="time">7 мая</span>
+                                <span class="date">23:33</span>
+                            </div>
+                        </td>
+                        <td class="name">
+                            <div class="name__wrap">
+                                <span class="name__link"><a href="">iPhone 8Plus</a></span>
+                                <span class="name__condition">Отличный</span>
+                            </div>
+                        </td>
+                        <td class="isprivate">
+                            <div class="isprivate__wrap">
+                                <span><img src="@assets/mutual/icon-check.svg" alt="" ></span>
+                            </div>
+                        </td>
+                        <td class="price">
+                            18500
+                        </td>
+                        <td class="market-price">
+                            <span class="market-price__green"></span>
+                            <span class="market-price__red">+500</span>
+                        </td>
+                        <td class="location">
+                            <span class="location__green"></span>
+                            <span class="location__red">~20 km</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="@assets/temp/1.jpg" alt="" width="84" height="98"></td>
+                        <td class="publication">
+                            <div class="publication__wrap">
+                                <span class="time">7 мая</span>
+                                <span class="date">23:33</span>
+                            </div>
+                        </td>
+                        <td class="name">
+                            <div class="name__wrap">
+                                <span class="name__link"><a href="">iPhone 8Plus</a></span>
+                                <span class="name__condition">Отличный</span>
+                            </div>
+                        </td>
+                        <td class="isprivate">
+                            <div class="isprivate__wrap">
+                                <span><img src="@assets/mutual/icon-check.svg" alt="" ></span>
+                            </div>
+                        </td>
+                        <td class="price">
+                            18500
+                        </td>
+                        <td class="market-price">
+                            <span class="market-price__green"></span>
+                            <span class="market-price__red">+500</span>
+                        </td>
+                        <td class="location">
+                            <span class="location__green"></span>
+                            <span class="location__red">~20 km</span>
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+</body>
+
+</html>

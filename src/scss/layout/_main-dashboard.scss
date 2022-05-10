@@ -1,0 +1,45 @@
+.main-dashboard {
+    min-height: 10vh;
+    //width: calc(100%-380px);
+    position: relative;
+    top: 18.1vh;
+    //left: 380px;
+    padding-left: 380px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.main-dashboard__blocks {
+    width: calc(100% - 30px);
+    display: flex;
+    justify-content: space-between;
+
+    div {
+        width: 31%;
+        min-height: 20vh;
+        @include setBlocksStyle;
+        margin-bottom: 3%;
+        padding-left: 48px;
+    }
+
+
+}
+
+.main-dashboard__relevant {
+    width: calc(100% - 30px);
+    height: 55vh;
+    @include setBlocksStyle;
+    overflow: auto;
+    position: relative;
+}
+
+.main-dashboard__relevant::-webkit-scrollbar {
+    width: 0;
+}
+
+.main-dashboard__relevant::-moz-scrollbar {
+    width: 0;
+    height: 0;
+}
+

@@ -1,0 +1,61 @@
+
+.table-relevant {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+
+
+    td {
+        @include font-main($size: 14px);
+        padding: 20px;
+        text-align: center;
+    }
+}
+
+.table-relevant__header {
+    background-color: $main-color-white;
+    width: 100%;
+    position: sticky;
+    top: 0;
+
+    &::after {
+        content:'';
+        display: block;
+        width: 300vh;
+        height: 1px;
+        background-color: rgba(191, 193, 197, .5);
+    }
+}
+
+.table-relevant__body {
+    padding-top: 100px;
+    @include font-main($family:$font-roboto);
+    
+    tr {
+        transition: all 0.4s ease;
+    }
+
+    tr:hover {
+        background-color: rgba(191, 193, 197, .5);
+        cursor: pointer;
+    }
+}
+
+
+
+
+
+
+
+//Временные табличные контейнеры
+.publication__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

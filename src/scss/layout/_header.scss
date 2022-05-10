@@ -1,0 +1,9 @@
+.header {
+    min-height: 14vh;
+    position: absolute;
+    background: $basic-white-color;
+    width: calc(100% - 350px);
+    left: 350px;
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.05);
+      
+}

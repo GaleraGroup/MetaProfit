@@ -1,0 +1,35 @@
+//-----------Sidebar mixins
+//Set SVG icons for sidebar
+@mixin setIcons($class, $path) {
+    #{$class}::before {
+        content: '';
+        position: absolute;
+        bottom: 14px;
+        background: url($path) no-repeat;
+        background-size: 35px 34px;
+        width: 35px;
+        height: 34px;
+    }
+}
+
+//Set style for sidebar-list items
+@mixin setStyleSidebarIcons() {
+    padding: 18px;
+    padding-left: 40px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    position: relative;
+
+    &:hover {
+        background-color: $sidebar-select-item;
+        padding: 18px;
+        padding-left: 40px;
+    }
+}
+
+//Basic block geometry and style
+@mixin setBlocksStyle() {
+    background: $basic-white-color;
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}

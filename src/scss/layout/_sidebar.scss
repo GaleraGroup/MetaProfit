@@ -1,0 +1,72 @@
+.sidebar {
+    background-color: $sidebar-color;
+    width: 350px;
+    min-height: 100vh;
+    //height: 100%;
+    padding-top: 50px;
+    position: fixed;
+    overflow: visible;
+    z-index: 10;
+}
+
+.sidebar__nav-list {
+    margin-top: 70px;
+}
+
+.sidebar__items {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .sidebar__item {
+        position: relative;
+        overflow: hidden;
+        @include setStyleSidebarIcons();
+    }
+
+    @include setIcons('.icon-mpanel', '@assets/icons/sidebar/icon-mpanel.svg');
+    @include setIcons('.icon-search', '@assets/icons/sidebar/icon-search.svg');
+    @include setIcons('.icon-favorite', '@assets/icons/sidebar/icon-favorite.svg');
+    @include setIcons('.icon-analitycs', '@assets/icons/sidebar/icon-analitycs.svg');
+    @include setIcons('.icon-accounts', '@assets/icons/sidebar/icon-accounts.svg');
+    @include setIcons('.icon-notification', '@assets/icons/sidebar/icon-notification.svg');
+    @include setIcons('.icon-sticker', '@assets/icons/sidebar/icon-sticker.svg');
+    @include setIcons('.icon-settings', '@assets/icons/sidebar/icon-setting.svg');
+}
+
+
+.sidebar__item-link {
+    padding-left: 40px;
+}
+
+.sidebar__item-name {
+    @include font-main($size:18px, $color: $sidebar-text-color);
+    margin-left: 37px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.sidebar__user-nav {
+    margin-top: 20vh;
+
+    .sidebar__logout {
+        @include setStyleSidebarIcons();
+    }
+
+
+    @include setIcons('.sidebar__logout', '@assets/icons/sidebar/icon-exit.svg');
+
+    .sidebar__logout-link {
+        padding-left: 40px;
+    }
+
+    .sidebar__logout-text {
+        @include font-main($size:18px, $color: $sidebar-text-color);
+        margin-left: 37px;
+    }
+}
+

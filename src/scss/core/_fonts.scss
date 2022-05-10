@@ -1,0 +1,57 @@
+//Fonts family variables
+$font-poppins: 'Poppins';
+$font-roboto: 'Roboto';
+
+//Fonts colors variables
+$main-color-font: #626365;
+
+//Font-faces rules
+@font-face {
+    font-family: $font-poppins, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    src: local('poppins-regular-webfont.woff2') format('woff2'),
+         local('poppins-regular-webfont.woff') format('woff'),
+         url(https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap);
+}
+
+@font-face {
+    font-family: $font-poppins, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    src: local('poppins-medium-webfont.woff2') format('woff2'),
+         local('poppins-medium-webfont.woff') format('woff'),
+         url(https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap);
+}
+
+@font-face {
+    font-family: $font-roboto;
+    font-weight: 400;
+    font-style: normal;
+    src: local('roboto-regular-webfont.woff2') format('woff2'),
+         local('roboto-regular-webfont.woff') format('woff'),
+         url(https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap);
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+    font-family: $font-roboto, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    src: local('roboto-medium-webfont.woff2') format('woff2'),
+         local('roboto-medium-webfont.woff') format('woff'),
+         url(https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap);
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+
+//Fonts mixin
+@mixin font-main($family:$font-poppins, $weight:400, $size:20px, $line-height:24px, $color:$main-color-font) {
+    font-family: $family;
+    font-weight: $weight;
+    font-style: normal;
+    font-size: $size;
+    line-height: $line-height;
+    color: $color;
+}
+
